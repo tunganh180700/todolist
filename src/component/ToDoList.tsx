@@ -1,18 +1,34 @@
-import { TextField } from '@mui/material'
-import React from 'react'
+import { TextField } from "@mui/material"
+import React from "react"
 
 const ToDoList = () => {
   return (
-    <div>
-      <div className='form'>
-        <div>
-          <TextField id='standard-basic' label='Standard' variant='standard' />
+    <div style={{ height: "100vh" }}>
+      <div style={{ display: "flex", backgroundColor: "blue" }}>
+        <div className="form" style={{ display: "flex", flexDirection: "column", rowGap: "20px" }}>
+          <div>
+            <TextField id="standard-basic" label="Standard" variant="standard" />
+          </div>
+          <div>
+            <TextField id="standard-basic" label="Standard" variant="standard" />
+          </div>
+          <div>
+            <TextField id="standard-basic" label="Standard" variant="standard" />
+          </div>
         </div>
-        <div>
-          <TextField id='standard-basic' label='Standard' variant='standard' />
-        </div>
-        <div>
-          <TextField id='standard-basic' label='Standard' variant='standard' />
+        <div className="table">
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>

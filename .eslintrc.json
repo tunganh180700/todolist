@@ -8,12 +8,15 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "plugin:import/recommended",
-    "plugin:prettier/recommended"
+    "airbnb"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
@@ -22,9 +25,9 @@
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "semi": ["warn", "never"],
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double"],
     "indent": ["error", 2, { "MemberExpression": "off", "SwitchCase": 1 }],
-    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-quotes": ["error", "prefer-double"],
     "no-use-before-define": ["off"],
     "no-control-regex": 0,
     "no-unused-vars": ["error"],
@@ -64,8 +67,8 @@
         "tabWidth": 2,
         "semi": false,
         "printWidth": 120,
-        "singleQuote": true,
-        "jsxSingleQuote": true,
+        "singleQuote": false,
+        "jsxSingleQuote": false,
         "bracketSpacing": true,
         "bracketSameLine": false,
         "arrowParens": "always",
